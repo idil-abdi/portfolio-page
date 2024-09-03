@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Mako&family=PT+Sans+Caption&display=swap');
+
+/*
+primary color -
+secondary color -
+accent  color -
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #d9d8d5;
+}
+
+.main{
+    margin: 1rem;
+}
+
+section{
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-family: 'Dosis';
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #9fb4e7;
+    position: relative;
+}
+
+.topnav #myLink{
+    display: none;
+}
+
+.active, .topnav a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: #04aa6d;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color:  #3a5a40;
+    color: white;
+}
+
+.hero{
+    position: relative;
+    display: flex;
+}
+
+.heading{
+    position: relative;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+span{
+    color: #4ee74b;
+}
+
+.introOne, .introTwo{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.cvBtn{
+    padding: 0.1rem 2rem;
+    background-color: transparent;
+    color: #4ee74b;
+    border: 1px solid #4ee74b;
+    margin-top: 1rem;
+}
+
+.cvBtn:hover{
+    color: white;
+    background-color: #4ee74b;
+}
+
+.skillSet{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skillItem{
+    border: 1px solid white;
+    text-align: center;
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.skillItem:hover{
+    box-shadow: 0 8px 16px 0 #4ee74b;
+    transition: 0.3s;
+    width: 200px;
+}
+
+h2{
+    color: #04aa6d;
+}
+
+p{
+    font-family: 'PT Sans Caption';
+    font-weight: 100;
+}
+
+.imgIcon{
+    width: 50px;
+    padding: 0.5rem;
+}
+
+.desktopNav{
+    display: none;
+    background-color: #04aa6d;
+}
+
+.desktopActive {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 2rem;
+}
+
+.desktopLogo{
+    float: left;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.projectContainer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.projectBox{
+    width: 400px;
+    border: 1px solid white;
+    position: relative;
+}
+
+.overlayImg{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.projectBox:hover .overlayImg {
+    opacity: 0.3;
+}
+
+.projectBox:hover .overlay {
+    opacity: 1;
+}
+
+.containerBtn{
+    position: absolute;
+    left: 52%;
+}
+
+.overlayBtn{
+    padding: 0.2rem 1rem;
+}
+
+.footer{
+    background-color: #04aa6d;
+    width: 100%;
+    text-align: center;
+    padding:  0.5rem 0;
+}
+
+@media screen and (min-width: 650px) {
+    .introOne, .introTwo{
+        font-size: 5rem;
+    }
+    .topnav {
+        display: none;
+    }
+    
+    .topnav a {
+        display: block;
+        float: right;
+        color: white;
+    }
+
+    .desktopNav{
+        display: block;
+    }
+
+    .border{
+        margin: 0 3rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .wrapSection{
+        display: flex;
+    }
+}
