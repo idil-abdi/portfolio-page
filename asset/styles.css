@@ -176,6 +176,31 @@ li a:hover:not(.active) {
     background-color: #04AA6D;
 }
 
+/* test trial */
+.project-b{
+    border: 1px solid white;
+    display: flex;
+    padding: 1rem;
+    position: relative;
+}
+
+.projectContext{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.project-b img{
+    position: absolute;
+    bottom: -31px;
+    right: -20px;
+    max-width: 300px;
+}
+
+
+/* end of test trial */
+
 .projectContainer{
     display: flex;
     justify-content: space-evenly;
@@ -251,12 +276,7 @@ li a:hover:not(.active) {
     }
 
     .border{
-        margin: 0 3rem;
-    }
-}
-
-@media screen and (min-width: 1000px){
-    .wrapSection{
-        display: flex;
+        margin: 3rem auto;
+        width: 70%;
     }
 }
