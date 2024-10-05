@@ -21,6 +21,20 @@ body{
     margin: 1rem;
 }
 
+.profile-img{
+    border-radius: 10px;
+}
+
+.sidebar{
+    border: 1px solid white;
+    height: fit-content;
+    padding: 5px;
+}
+
+.content{
+    border: 1px solid white;
+}
+
 section{
     padding: 1rem;
     margin: 0.5rem 0;
@@ -87,7 +101,7 @@ span{
 }
 
 .introOne, .introTwo{
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -209,7 +223,7 @@ li a:hover:not(.active) {
 }
 
 .projectBox{
-    width: 400px;
+    width: 250px;
     border: 1px solid white;
     position: relative;
 }
@@ -231,6 +245,7 @@ li a:hover:not(.active) {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
+    font-size: 10px;
 }
 
 .projectBox:hover .overlayImg {
@@ -243,7 +258,7 @@ li a:hover:not(.active) {
 
 .containerBtn{
     position: absolute;
-    left: 52%;
+    left: 23%;
 }
 
 .overlayBtn{
@@ -257,9 +272,54 @@ li a:hover:not(.active) {
     padding:  0.5rem 0;
 }
 
-@media screen and (min-width: 650px) {
-    .introOne, .introTwo{
-        font-size: 5rem;
+/* contact form */
+.feedback-input {
+    color:white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid white;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid #04aa6d; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #04aa6d;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#3a5a40; }
+
+@media screen and (min-width: 750px) {
+    .main{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        gap: 10px;
     }
     .topnav {
         display: none;
@@ -276,7 +336,7 @@ li a:hover:not(.active) {
     }
 
     .border{
-        margin: 3rem auto;
-        width: 70%;
+        margin: 1rem auto;
+        width: 85%;
     }
 }
