@@ -344,8 +344,20 @@ li a:hover:not(.active) {
   }
   [type="submit"]:hover { background:#3a5a40; }
 
-#form p{
+.input-group {
+    position: relative;
+}
+
+.input-group span{
+    position: absolute;
+    bottom: 33px;
+    right: 17px;
+    font-size: 14px;
     color: red;
+}
+
+.input-group span i{
+    color: #04AA6D;
 }
 
 @media screen and (min-width: 750px) {

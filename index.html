@@ -6,6 +6,7 @@
     <script src="./asset/index.js" defer></script>
     <link rel="stylesheet" href="./asset/styles.css" />
     <link rel="stylesheet" href="./asset/background.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Profile Page</title>
   </head>
   <body>
@@ -239,12 +240,24 @@
           <h2>Contact</h2>
           
           <form id="form" action="https://api.web3forms.com/submit" method="POST">     
-            <!-- <input type="hidden" name="access_key" value="744dac25-ac40-49d9-8035-34d91fe7c63b">  -->
-            <p id="error"></p>
-            <input name="name" type="text" class="feedback-input" placeholder="Name" id="name"/>   
-            <input name="email" type="text" class="feedback-input" placeholder="Email" id="email"/>
-            <textarea name="text" class="feedback-input" placeholder="Comment" id="text"></textarea>
-            <input type="submit" value="SUBMIT"/>
+            <input type="hidden" name="access_key" value="744dac25-ac40-49d9-8035-34d91fe7c63b">
+             <div class="input-group">
+              <input name="name" type="text" class="feedback-input" placeholder="Name" id="contact-name" onkeyup="validateName()"/>
+              <span id="name-error"></span> 
+             </div>
+
+             <div class="input-group">
+              <input name="email" type="text" class="feedback-input" placeholder="Email" id="contact-email" onkeyup="validateEmail()"/>
+              <span id="email-error"></span> 
+             </div>
+
+             <div class="input-group">
+              <textarea name="text" class="feedback-input" placeholder="Message" id="contact-message" onkeyup="validateMessage()"></textarea>
+              <span id="message-error"></span> 
+             </div>
+
+            <input onclick="return validateForm()" type="submit" value="SUBMIT"/>
+            <span id="submit-error"></span>
           </form>
         </section>
 
