@@ -50,6 +50,9 @@ section{
     margin: 0.5rem 0;
     font-family: 'Dosis';
 }
+#about p {
+    font-size: 1.5rem;
+}
 
 .topnav{
     overflow: hidden;
