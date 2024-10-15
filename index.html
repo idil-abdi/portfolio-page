@@ -181,8 +181,59 @@
         <section class="border" id="projects">
           <h2>Projects</h2>
           <div class="projectContainer">
+            <div id="portfolioBtnContainer">
+              <button class="portfolioBtn PActive" onclick="filterSelection('all')"> Show all</button>
+              <button class="portfolioBtn" onclick="filterSelection('web-dev')"> HTML/CSS/JS</button>
+              <button class="portfolioBtn" onclick="filterSelection('react')"> REACT</button>
+              <button class="portfolioBtn" onclick="filterSelection('python')"> PYTHON</button>
+            </div>
 
-            <div class="projectBox">
+            <div class="row">
+              <div class="column web-dev">
+                <div class="portfolioContent">
+                  <img src="./asset/img/standby.png" alt="Nature" style="width:100%">
+                </div>
+              </div>
+            
+              <div class="column react">
+                <div class="portfolioContent">
+                  <img src="./asset/img/standby-img.jpg" alt="Car" style="width:100%">
+                </div>
+              </div>
+            
+              <div class="column python">
+                <div class="projectBox portfolioContent">
+                  <img src="./asset/img/project-One.png" alt="People" style="width:100%">
+                  <div class="overlay">
+                    <h3>Fjällräven</h3>
+                    <p><b>Programming Languages:</b> HTML CSS and JavaScript</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam mollitia sint libero labore consequatur! Quis distinctio voluptas, adipisci, temporibus</p>
+                    <div class="containerBtn">
+                      <button class="overlayBtn"><a href="https://github.com/idil-abdi/fed-group-challenge" target="_blank">GitHub</a></button>
+                      <button class="overlayBtn"><a href=" https://idil-abdi.github.io/fed-group-challenge/" target="_blank">Demo</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column python">
+                <div class="projectBox portfolioContent">
+                  <img src="./asset/img/project-One.png" alt="People" style="width:100%">
+                  <div class="overlay">
+                    <h3>Fjällräven</h3>
+                    <p><b>Programming Languages:</b> HTML CSS and JavaScript</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam mollitia sint libero labore consequatur! Quis distinctio voluptas, adipisci, temporibus</p>
+                    <div class="containerBtn">
+                      <button class="overlayBtn"><a href="https://github.com/idil-abdi/fed-group-challenge" target="_blank">GitHub</a></button>
+                      <button class="overlayBtn"><a href=" https://idil-abdi.github.io/fed-group-challenge/" target="_blank">Demo</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- END GRID -->
+            </div>
+
+            <!-- <div class="projectBox">
               <img src="./asset/img/standby.png" alt="blank picture" class="overlayImg" >
               <div class="overlay">
                 <h3>Fjällräven</h3>
@@ -205,31 +256,8 @@
                   <button class="overlayBtn"><a href="https://idil-abdi.github.io/mini-projects/" target="_blank">Demo</a></button>
                 </div>
               </div>
-            </div> 
-            <div class="projectBox">
-              <img src="./asset/img/standby.png" alt="blank picture" class="overlayImg">
-              <div class="overlay">
-                <h3>Mini Projects</h3>
-                <p><b>Programming Languages:</b> HTML CSS and JavaScript</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam mollitia sint libero labore consequatur! Quis distinctio voluptas, adipisci, temporibus</p>
-                <div class="containerBtn">
-                  <button class="overlayBtn"><a href="https://github.com/idil-abdi/mini-projects" target="_blank">GitHub</a></button>
-                  <button class="overlayBtn"><a href="https://idil-abdi.github.io/mini-projects/" target="_blank">Demo</a></button>
-                </div>
-              </div>
-            </div>
-            <div class="projectBox">
-              <img src="./asset/img/standby.png" alt="blank picture" class="overlayImg">
-              <div class="overlay">
-                <h3>Mini Projects</h3>
-                <p><b>Programming Languages:</b> HTML CSS and JavaScript</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam mollitia sint libero labore consequatur! Quis distinctio voluptas, adipisci, temporibus</p>
-                <div class="containerBtn">
-                  <button class="overlayBtn"><a href="https://github.com/idil-abdi/mini-projects" target="_blank">GitHub</a></button>
-                  <button class="overlayBtn"><a href="https://idil-abdi.github.io/mini-projects/" target="_blank">Demo</a></button>
-                </div>
-              </div>
-            </div>  
+            </div>  -->
+          
 
           </div>
         </section> 
@@ -258,9 +286,6 @@
             <span id="submit-error"></span>
           </form>
         </section>
-
-        
-
       </div>
       </div> 
       <div class="footer">Footer</div>
