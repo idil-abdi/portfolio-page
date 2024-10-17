@@ -110,7 +110,7 @@ section{
 }
 
 span{
-    color: #4ee74b;
+    color: #04AA6D
 }
 
 .introOne, .introTwo{
@@ -248,8 +248,7 @@ li a:hover:not(.active) {
 
 .projectContainer{
     display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
+    justify-content: start;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -271,11 +270,15 @@ li a:hover:not(.active) {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 42%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    font-size: 10px;
+    width: 90%;
+    background-color:#000000a1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .projectBox:hover .overlayImg {
@@ -287,12 +290,9 @@ li a:hover:not(.active) {
 }
 
 .containerBtn{
-    position: absolute;
-    left: 23%;
-}
-
-.overlayBtn{
-    padding: 0.2rem 1rem;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
 }
 
 .footer{
@@ -364,6 +364,11 @@ li a:hover:not(.active) {
 .pythonBox {
     text-align: center;
     border: 1px solid white;
+    padding: 8px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* PORTFOLIO FILTER */
@@ -394,6 +399,7 @@ li a:hover:not(.active) {
 .column {
     float: left;
     display: none; /* Hide columns by default */
+    width: 100%;
   }
   /* Clear floats after rows */
 .row:after {
@@ -454,6 +460,31 @@ li a:hover:not(.active) {
   }
 /* end modal */
 
+.myBtn{
+    width: 100%;
+    background-color: #04aa6d;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+
+.myBtn a{
+    color: white;
+}
+
+.secondMyBtn{
+    background-color: transparent;
+    border: 3px solid #04aa6d;
+    color: #04aa6d;
+}
+
+.secondMyBtn a{
+    color: #04aa6d;
+}
+
 @media screen and (min-width: 750px) {
     .main{
         display: grid;
@@ -478,7 +509,14 @@ li a:hover:not(.active) {
         margin: 1rem auto;
         width: 85%;
     }
+    
+}
+
+@media screen and (min-width: 1000px) {
     .column {
         width: 50%;
+    }
+    .overlay {
+        width: 100%;
     }
 }
