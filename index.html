@@ -182,10 +182,10 @@
           <h2>Projects</h2>
           <div class="projectContainer">
             <div id="portfolioBtnContainer">
-              <button class="portfolioBtn PActive" onclick="filterSelection('all')"> Show all</button>
-              <button class="portfolioBtn" onclick="filterSelection('web-dev')"> HTML/CSS/JS</button>
-              <button class="portfolioBtn" onclick="filterSelection('react')"> REACT</button>
-              <button class="portfolioBtn" onclick="filterSelection('python')"> PYTHON</button>
+              <button class="portfolioBtn PActive" onclick="filterSelection('all')"> Show All</button>
+              <button class="portfolioBtn" onclick="filterSelection('web-dev')"> Front-End</button>
+              <button class="portfolioBtn" onclick="filterSelection('react')"> Back-End</button>
+              <button class="portfolioBtn" onclick="filterSelection('python')"> Python</button>
             </div>
 
             <div class="row">
@@ -216,20 +216,17 @@
                 </div>
               </div>
 
-              <div class="column python">
-                <div class="projectBox portfolioContent">
-                  <img src="./asset/img/project-One.png" alt="People" style="width:100%">
-                  <div class="overlay">
-                    <h3>Fjällräven</h3>
-                    <p><b>Programming Languages:</b> HTML CSS and JavaScript</b></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam mollitia sint libero labore consequatur! Quis distinctio voluptas, adipisci, temporibus</p>
-                    <div class="containerBtn">
-                      <button class="overlayBtn"><a href="https://github.com/idil-abdi/fed-group-challenge" target="_blank">GitHub</a></button>
-                      <button class="overlayBtn"><a href=" https://idil-abdi.github.io/fed-group-challenge/" target="_blank">Demo</a></button>
-                    </div>
+              <div class="column python pythonBox">
+                <h2>Guessing Game</h2>
+                <button id="myBtn">Play Now</button>
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close"></span>
+                    <iframe src="https://trinket.io/embed/python3/886d240cce4f?toggleCode=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
                   </div>
-                </div>
+                </div>                
               </div>
+
             <!-- END GRID -->
             </div>
 
