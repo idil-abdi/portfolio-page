@@ -60,7 +60,7 @@
               <div class="introTwo animate__animated animate__heartBeat ">A Software Developer.</div>
               <div class="heroBtnPosition">
                 <button class="myBtn secondMyBtn"><a href="#contact">Get in contact</a></button>
-                <button class="myBtn">CV</button>
+                <button class="myBtn"><a href="./asset/Edil Abdiaziz CV.pdf" download="edil-abdiaziz-cv" target="_blank">CV</a></button>
               </div>
             </section>
           </div>
@@ -93,9 +93,8 @@
           <hr>
           <br>
           <div class="social-media">
-            <img src="./asset/img/nstagram.png" alt="instagram" width="50px">
-            <img src="./asset/img/linkedin.png" alt="LinkedIn" width="50px">
-            <img src="./asset/img/github.png" alt="GitHub" width="50px">
+            <a href="https://www.linkedin.com/in/edil-abdiaziz/"target="_blank"><img src="./asset/img/linkedin.png" alt="LinkedIn" width="50px"></a>
+            <a href="https://github.com/idil-abdi" target="_blank"><img src="./asset/img/github.png" alt="GitHub" width="50px"></a>         
           </div>
         </div>
 
@@ -201,26 +200,24 @@
           </section>
 
 
-          <section class="border hidden" id="projects">
+          <section class="border" id="projects">
             <h2>Projects</h2>
             <div class="projectContainer">
-              <div id="portfolioBtnContainer" class="hidden">
+              <div id="portfolioBtnContainer">
                 <button class="portfolioBtn PActive" onclick="filterSelection('all')"> Show All</button>
                 <button class="portfolioBtn" onclick="filterSelection('front-end')"> Front-End</button>
                 <button class="portfolioBtn" onclick="filterSelection('back-end')"> Back-End</button>
                 <button class="portfolioBtn" onclick="filterSelection('python')"> Python</button>
               </div>
-
-              <div>
               <div class="row">
 
                 <div class="column front-end ">
-                  <div class="projectBox portfolioContent hidden">
+                  <div class="projectBox portfolioContent">
                     <img src="./asset/img/project-One.png" style="width:100%">
                     <div class="overlay">
                       <h3>Fjällräven</h3>
                       <p><b>Programming Languages:</b> HTML CSS and JavaScript</b></p>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam mollitia sint libero labore consequatur! Quis distinctio voluptas, adipisci, temporibus</p>
+                      <p>Welcome to my project, where I've created a unique version of the Fjällräven website! Inspired by Fjällräven’s commitment to quality outdoor gear and sustainable practices, this website showcases my skills in web development using HTML, CSS, and JavaScript.</p>
                       <div class="containerBtn">
                         <button class="myBtn secondMyBtn"><a href="https://github.com/idil-abdi/fed-group-challenge" target="_blank">GitHub</a></button>
                         <button class="myBtn "><a href=" https://idil-abdi.github.io/fed-group-challenge/" target="_blank">Demo</a></button>
@@ -230,7 +227,7 @@
                 </div>
 
                 <div class="column back-end">
-                  <div class="projectBox portfolioContent hidden">
+                  <div class="projectBox portfolioContent">
                     <img src="./asset/img/standby.png" style="width:100%">
                     <div class="overlay">
                       <h3>Fjällräven</h3>
@@ -245,35 +242,26 @@
                 </div>
               
                 <div class="column python">
-                  <div class="pythonBox hidden">
-                    <h2>Guessing Game</h2> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum id dolor autem optio eum reiciendis architecto in velit consequatur ea, officiis veniam. Unde ullam animi enim, provident culpa sit!</p>
+                  <div class="pythonBox">
+                    <h2>Guessing The Game</h2> 
+                    <p>Welcome to my "Guess the Number" project! In this fun and interactive game, players are challenged to guess a randomly selected number between 1 and 100. The program provides feedback on whether each guess is too high, too low, or correct, creating an engaging experience for users of all ages.</p>
+                    <p>Key Features:</p>
+                    <p>Random Number Generation: The game randomly selects a number, ensuring a unique experience each time.</p>
+                    <p>User Feedback: Players receive hints to help them narrow down their guesses.</p>
+                    <p>Simple Interface: The game is easy to understand and play, making it accessible for everyone.</p>
+
                     <button id="myBtn" class="myBtn">Play Now</button>
+
                     <div id="myModal" class="modal">
                       <div class="modal-content">
-                        <span class="close"></span>
-                        <!-- <iframe src="https://trinket.io/embed/python3/886d240cce4f?toggleCode=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe> -->
-                      </div>
+                        <span class="close">&times;</span>
+                        <iframe src="https://trinket.io/embed/python/f882e6800826?toggleCode=true&start=result" width="100%" height="350" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>                      </div>
                     </div>
-                  </div>                
-                </div>
 
-                <div class="column python">
-                  <div class="pythonBox hidden">
-                  <h2>Guessing Game</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum id dolor autem optio eum reiciendis architecto in velit consequatur ea, officiis veniam. Unde ullam animi enim, provident culpa sit!</p>
-                  <button id="myBtn" class="myBtn">Play Now</button>
-                  <div id="myModal" class="modal">
-                    <div class="modal-content">
-                      <span class="close"></span>
-                      <!-- <iframe src="https://trinket.io/embed/python3/886d240cce4f?toggleCode=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe> -->
-                    </div>
-                  </div>
                   </div>                
                 </div>
 
               </div>
-            </div>
             </div>
           </section> 
 

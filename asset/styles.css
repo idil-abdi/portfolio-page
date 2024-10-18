@@ -29,6 +29,7 @@ body{
     padding: 5px;
     margin: 10px 0;
 }
+
 .contact-detail{
     padding: 0.5rem;
     font-family: 'PT Sans Caption';
@@ -108,7 +109,7 @@ section{
 }
 
 span{
-    color: #04AA6D
+    color: #4ee74b;
 }
 
 .introOne, .introTwo{
@@ -218,31 +219,6 @@ li a:hover:not(.active) {
 .active {
     background-color: #04AA6D;
 }
-
-/* test trial */
-.project-b{
-    border: 1px solid white;
-    display: flex;
-    padding: 1rem;
-    position: relative;
-}
-
-.projectContext{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.project-b img{
-    position: absolute;
-    bottom: -31px;
-    right: -20px;
-    max-width: 300px;
-}
-
-
-/* end of test trial */
 
 .projectContainer{
     display: flex;
@@ -360,10 +336,8 @@ li a:hover:not(.active) {
 }
 
 .pythonBox {
-    text-align: center;
     border: 1px solid white;
     padding: 8px;
-    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -398,7 +372,7 @@ li a:hover:not(.active) {
     float: left;
     display: none; /* Hide columns by default */
     width: 100%;
-  }
+}
   /* Clear floats after rows */
 .row:after {
     content: "";
@@ -469,30 +443,27 @@ li a:hover:not(.active) {
     transition: all 0.3s;
     cursor: pointer;
 }
-
 .myBtn a{
     color: white;
 }
-
 .secondMyBtn{
     background-color: transparent;
     border: 3px solid #04aa6d;
     color: #04aa6d;
 }
-
 .secondMyBtn a{
     color: #04aa6d;
 }
 
 /* animation */
-.hidden {
+.animationHidden {
     opacity: 0;
     filter: blur();
     transition: all 1s;
     transform: translateX(-100%);
 }
 
-.show{
+.animationShow{
     opacity: 1;
     filter: blur();
     transform: translate(0);

@@ -114,17 +114,27 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+
+
+// animation
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('.animationShow')
+//     } else {
+//       entry.target.classList.remove('.animationShow')
+//     }
+//   })
+// })
+
+// const hiddenElement = document.querySelectorAll('.animationHidden')
+// hiddenElement.forEach((el) => observer.observe(el))
+
 // modal
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("myBtn");
+const span = document.getElementsByClassName("close")[0];
+ 
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -140,17 +150,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-// animation
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show')
-    } else {
-      entry.target.classList.remove('show')
-    }
-  })
-})
-
-const hiddenElement = document.querySelectorAll('.hidden')
-hiddenElement.forEach((el) => observer.observe(el))
