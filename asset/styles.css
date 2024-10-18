@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=PT+Sans+Caption&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Mako&family=PT+Sans+Caption&display=swap');
 
-/*
-primary color -
-secondary color -
-accent  color -
-*/
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     box-sizing: border-box;
@@ -469,6 +467,7 @@ li a:hover:not(.active) {
     color: white;
     padding: 10px 15px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .myBtn a{
@@ -483,6 +482,34 @@ li a:hover:not(.active) {
 
 .secondMyBtn a{
     color: #04aa6d;
+}
+
+/* animation */
+.hidden {
+    opacity: 0;
+    filter: blur();
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur();
+    transform: translate(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.heroBtnPosition{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+    margin-top: 1rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -513,9 +540,6 @@ li a:hover:not(.active) {
 }
 
 @media screen and (min-width: 1000px) {
-    .column {
-        width: 50%;
-    }
     .overlay {
         width: 100%;
     }
