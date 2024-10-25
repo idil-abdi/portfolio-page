@@ -201,16 +201,15 @@
 
 
           <section class="border" id="projects">
-            <h2>Projects</h2>
+            <h2 class="hidden">Projects</h2>
             <div class="projectContainer">
-              <div id="portfolioBtnContainer">
+              <div class="hidden" id="portfolioBtnContainer">
                 <button class="portfolioBtn PActive" onclick="filterSelection('all')"> Show All</button>
                 <button class="portfolioBtn" onclick="filterSelection('front-end')"> Front-End</button>
                 <button class="portfolioBtn" onclick="filterSelection('back-end')"> Back-End</button>
                 <button class="portfolioBtn" onclick="filterSelection('python')"> Python</button>
               </div>
-              <div class="row">
-
+              <div class="row hidden">
                 <div class="column front-end ">
                   <div class="projectBox portfolioContent">
                     <img src="./asset/img/fjall-raven.png" style="width:100%">
@@ -245,11 +244,6 @@
                   <div class="pythonBox">
                     <h2>Guessing The Game</h2> 
                     <p>Welcome to my "Guess the Number" project! In this fun and interactive game, players are challenged to guess a randomly selected number between 1 and 100. The program provides feedback on whether each guess is too high, too low, or correct, creating an engaging experience for users of all ages.</p>
-                    <p>Key Features:</p>
-                    <p>Random Number Generation: The game randomly selects a number, ensuring a unique experience each time.</p>
-                    <p>User Feedback: Players receive hints to help them narrow down their guesses.</p>
-                    <p>Simple Interface: The game is easy to understand and play, making it accessible for everyone.</p>
-
                     <button id="myBtn" class="myBtn">Play Now</button>
 
                     <div id="myModal" class="modal">

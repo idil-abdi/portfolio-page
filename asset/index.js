@@ -65,20 +65,20 @@ function validateForm() {
 }
 
 // portfolio filter
-filterSelection("all") // Execute the function and show all columns
+filterSelection("all")
 
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
   if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
 
-// Show filtered elements
+
 function w3AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -90,7 +90,6 @@ function w3AddClass(element, name) {
   }
 }
 
-// Hide elements that are not selected
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -103,7 +102,6 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("portfolioBtnContainer");
 var btns = btnContainer.getElementsByClassName("portfolioBtn");
 for (var i = 0; i < btns.length; i++) {
@@ -117,34 +115,32 @@ for (var i = 0; i < btns.length; i++) {
 
 
 // animation
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('.animationShow')
-//     } else {
-//       entry.target.classList.remove('.animationShow')
-//     }
-//   })
-// })
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+      entry.target.classList.remove('show')
+    }
+  })
+})
 
-// const hiddenElement = document.querySelectorAll('.animationHidden')
-// hiddenElement.forEach((el) => observer.observe(el))
+const hiddenElement = document.querySelectorAll('.hidden')
+hiddenElement.forEach((el) => observer.observe(el))
 
-// modal
+// Python Modal
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
- 
+
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

@@ -456,14 +456,14 @@ li a:hover:not(.active) {
 }
 
 /* animation */
-.animationHidden {
+.hidden {
     opacity: 0;
     filter: blur();
     transition: all 1s;
     transform: translateX(-100%);
 }
 
-.animationShow{
+.show{
     opacity: 1;
     filter: blur();
     transform: translate(0);
