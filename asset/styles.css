@@ -220,61 +220,7 @@ li a:hover:not(.active) {
     background-color: #04AA6D;
 }
 
-.projectContainer{
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
-.projectBox{
-    position: relative;
-}
-
-.overlayImg{
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.overlay{
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    background-color:#000000a1;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.projectBox:hover .overlayImg {
-    opacity: 0.3;
-}
-
-.projectBox:hover .overlay {
-    opacity: 1;
-}
-
-.containerBtn{
-    display: flex;
-    justify-content: end;
-    gap: 10px;
-}
-
-.footer{
-    background-color: #04aa6d;
-    width: 100%;
-    text-align: center;
-    padding:  0.5rem 0;
-}
 
 /* contact form */
 .feedback-input {
@@ -335,64 +281,154 @@ li a:hover:not(.active) {
     color: #04AA6D;
 }
 
-.pythonBox {
-    border: 1px solid white;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.myBtn{
+    width: 100%;
+    background-color: #04aa6d;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.myBtn a{
+    color: white;
+}
+.secondMyBtn{
+    background-color: transparent;
+    border: 3px solid #04aa6d;
+    color: #04aa6d;
+}
+.secondMyBtn a{
+    color: #04aa6d;
 }
 
-/* PORTFOLIO FILTER */
-.portfolioBtn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    cursor: pointer;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .portfolioBtn:hover {
-    background-color: #ddd;
-  }
-  
-  /* Add a dark background color to the active button */
-  .portfolioBtn.pActive {
-    background-color: #666;
-     color: white;
-  }
-  .row {
-    margin: 8px -16px;
-  }
-  .row, .row > .column {
-  padding: 8px;
-  }
-  /* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    display: none; /* Hide columns by default */
-    width: 100%;
+/* animation */
+.hidden {
+    opacity: 0;
+    filter: blur();
+    transition: all 1s;
+    transform: translateX(-100%);
 }
-  /* Clear floats after rows */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+.show{
+    opacity: 1;
+    filter: blur();
+    transform: translate(0);
+}
+
+.heroBtnPosition{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+/* Portfolio Projects */
+.filterDiv {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    margin: 2px;
+    display: none;
   }
   
-  /* Content Portfolio */
-  .portfolioContent {
-    background-color: white;
-    padding: 5px;
-  }
-  
-  /* The "show" class is added to the filtered elements */
   .show {
     display: block;
   }
-/* ... */
+  
+  .container {
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+#myBtnContainer{
+    display: flex;
+    gap: 10px;
+}
 
-/* modal */
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  
+.containerBtn{
+    display: flex;
+    gap: 30px;
+}
+
+  /* flip cards */
+  .flip-card {
+    background-color: transparent;
+    width: 420px;
+    height: 220px;
+    perspective: 1000px;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: transparent;
+    color: black;
+  }
+
+  .flip-card-front img{
+    width: 420px;
+  }
+  
+  .flip-card-back {
+    background-color: #121212;
+    color: white;
+    transform: rotateY(180deg);
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  /* end of flip cards */
+
+  /* modal */
+  /* modal */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -446,41 +482,20 @@ li a:hover:not(.active) {
 .myBtn a{
     color: white;
 }
-.secondMyBtn{
-    background-color: transparent;
-    border: 3px solid #04aa6d;
-    color: #04aa6d;
-}
-.secondMyBtn a{
-    color: #04aa6d;
-}
 
-/* animation */
-.hidden {
-    opacity: 0;
-    filter: blur();
-    transition: all 1s;
-    transform: translateX(-100%);
-}
+/* end of portfolio projects */
 
-.show{
-    opacity: 1;
-    filter: blur();
-    transform: translate(0);
+.footer{
+    background-color: #04aa6d;
+    width: 100%;
+    text-align: center;
+    padding:  0.5rem 0;
 }
 
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
-}
-
-.heroBtnPosition{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    gap: 10px;
-    margin-top: 1rem;
 }
 
 @media screen and (min-width: 750px) {

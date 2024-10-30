@@ -202,33 +202,60 @@
 
           <section class="border" id="projects">
             <h2 class="hidden">Projects</h2>
-            <div class="projectContainer">
-              <div class="hidden" id="portfolioBtnContainer">
-                <button class="portfolioBtn PActive" onclick="filterSelection('all')"> Show All</button>
-                <button class="portfolioBtn" onclick="filterSelection('front-end')"> Front-End</button>
-                <button class="portfolioBtn" onclick="filterSelection('back-end')"> Back-End</button>
-                <button class="portfolioBtn" onclick="filterSelection('python')"> Python</button>
-              </div>
-              <div class="row hidden">
-                <div class="column front-end ">
-                  <div class="projectBox portfolioContent">
-                    <img src="./asset/img/fjall-raven.png" style="width:100%">
-                    <div class="overlay">
+
+            <div class="hidden" id="myBtnContainer" >
+              <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn" onclick="filterSelection('front-end')">Front-end</button>
+              <button class="btn" onclick="filterSelection('back-end')">Back-end</button>
+              <button class="btn" onclick="filterSelection('python')">Python</button>
+            </div>
+            
+            <div class="container hidden">
+              <div class="filterDiv front-end">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="./asset/img/fjall-raven.png" alt="Avatar">
+                  </div>
+                    <div class="flip-card-back">
                       <h3>Fjällräven</h3>
                       <p><b>Programming Languages:</b> HTML CSS and JavaScript</b></p>
                       <p>Welcome to my project, where I've created a unique version of the Fjällräven website! Inspired by Fjällräven’s commitment to quality outdoor gear and sustainable practices, this website showcases my skills in web development using HTML, CSS, and JavaScript.</p>
                       <div class="containerBtn">
-                        <button class="myBtn secondMyBtn"><a href="https://github.com/idil-abdi/fed-group-challenge" target="_blank">GitHub</a></button>
-                        <button class="myBtn "><a href=" https://idil-abdi.github.io/fed-group-challenge/" target="_blank">Demo</a></button>
+                        <button class="myBtn secondMyBtn"><a href="https://github.com/idil-abdi/fed-group-challenge" target="_blank">GitHub</button></a>
+                        <button class="myBtn "><a href=" https://idil-abdi.github.io/fed-group-challenge/" target="_blank">Demo</button></a>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="column back-end">
-                  <div class="projectBox portfolioContent">
-                    <img src="./asset/img/film-nest.png" style="width:100%">
-                    <div class="overlay">
+              </div>
+              <div class="filterDiv front-end">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="./asset/img/mini-project.png" alt="Avatar">
+                  </div>
+                    <div class="flip-card-back">
+                      <h3>Mini Projects</h3>
+                      <p><b>Programming Languages:</b> HTML CSS and JavaScript</b></p>
+                      <p>Welcome to my JavaScript project showcase! Explore a variety of interactive projects that highlight my coding skills and creativity. From dynamic web applications to fun mini-games, each project reflects my passion for JavaScript and problem-solving. Enjoy browsing!</p>
+                      <div class="containerBtn">
+                        <button class="myBtn secondMyBtn"><a href="https://github.com/idil-abdi/film-nest" target="_blank">GitHub</a></button>
+                        <button class="myBtn "><a href="https://idil-abdi.github.io/film-nest/" target="_blank">Demo</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="filterDiv front-end">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="./asset/img/film-nest.png" alt="Avatar">
+                  </div>
+                    <div class="flip-card-back">
                       <h3>Film Nest</h3>
                       <p><b>Programming Languages:</b> React and Tailwind CSS</b></p>
                       <p>Film Nest is your go-to hub for all things cinema! Discover the latest trending movies, explore in-depth reviews, and connect with fellow film enthusiasts. Whether you're searching for blockbuster hits or hidden gems, we’ve got you covered. Join us and stay updated on the films everyone is talking about!</p>
@@ -239,24 +266,29 @@
                     </div>
                   </div>
                 </div>
-              
-                <div class="column python">
-                  <div class="pythonBox">
-                    <h2>Guessing The Game</h2> 
-                    <p>Welcome to my "Guess the Number" project! In this fun and interactive game, players are challenged to guess a randomly selected number between 1 and 100. The program provides feedback on whether each guess is too high, too low, or correct, creating an engaging experience for users of all ages.</p>
-                    <button id="myBtn" class="myBtn">Play Now</button>
+              </div>
 
-                    <div id="myModal" class="modal">
-                      <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <iframe src="https://trinket.io/embed/python/f882e6800826?toggleCode=true&start=result" width="100%" height="350" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>                      </div>
+              <div class="filterDiv python">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="./asset/img/guess-my-number.jpg" alt="Avatar">
                     </div>
-
-                  </div>                
+                    <div class="flip-card-back">
+                      <h2>Guessing The Game</h2> 
+                      <p>Welcome to my "Guess the Number" project! In this fun and interactive game, players are challenged to guess a randomly selected number between 1 and 100. The program provides feedback on whether each guess is too high, too low, or correct, creating an engaging experience for users of all ages.</p>
+                      <button id="myBtn" class="myBtn">Play Now</button>
+                    </div>
+                  </div>
                 </div>
-
+              </div>
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <iframe src="https://trinket.io/embed/python/f882e6800826?toggleCode=true&start=result" width="100%" height="350" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
               </div>
             </div>
+
           </section> 
 
           <section class="border hidden" id="contact">
